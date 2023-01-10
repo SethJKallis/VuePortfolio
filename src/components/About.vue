@@ -1,8 +1,7 @@
 <template>
   <div>
     <article id="about" class="section-height mb-4 mb-lg-0">
-      <h2 class="display-4 fw-bold">About</h2>
-      <div class="container-fluid px-3 mb-2">
+      <div class="container-fluid px-3 mb-2 mt-5 mt-lg-0">
         <div
           class="row d-flex justify-content-center align-content-center mb-3">
           <h3 class="display-6 fw-bold text-center">Aspirations</h3>
