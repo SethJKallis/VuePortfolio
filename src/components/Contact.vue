@@ -10,7 +10,7 @@
                 <legend class="display-5 fw-bold"></legend>
                 <div class="row">
                   <h3 class="display-6 fw-bold">Your Details:</h3>
-                  <div class="col-12 col-md mb-1">
+                  <div class="col-10 col-md-5 mb-1 mx-auto me-md-0 g-md-2">
                     <input
                       class="form-control text-center"
                       name="firstName"
@@ -20,7 +20,8 @@
                       required
                     />
                   </div>
-                  <div class="col-12 col-md mb-1">
+
+                  <div class="col-10 col-md-5 mb-1 mx-auto ms-md-0 g-md-2">
                     <input
                       class="form-control text-center"
                       name="lastName"
@@ -30,7 +31,8 @@
                       required
                     />
                   </div>
-                  <div class="col-12 mb-1">
+
+                  <div class="col-10 mb-1 mx-auto g-md-2">
                     <input
                       class="form-control text-center"
                       name="emailAddress"
@@ -40,9 +42,10 @@
                       required
                     />
                   </div>
+
                   <h3 class="display-6 fw-bold mt-3">Comments:</h3>
                   <div
-                    class="col-10 mb-1 mx-auto">
+                    class="col-10 mb-1 mx-auto g-md-0">
                     <textarea
                       class="form-control text-center"
                       name="comments"

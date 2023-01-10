@@ -224,24 +224,6 @@ a:focus{
 }
 
 /* EDUCATION */
-.education-section h3{
-    position: relative;
-}
-
-.education-section h3::after{
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 25%;
-    top: 85%;
-    transition: all 0.5s ease;
-    background-color: var(--darkCOLOR);
-}
-
-.education-section h3:hover::after {
-    width: 50%;
-}
 
 .education-section .box{
     border: 2px solid var(--darkCOLOR);
@@ -258,25 +240,6 @@ a:focus{
 }
 
 /* WORK */
-
-.work-section h3{
-    position: relative;
-}
-
-.work-section h3::after{
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 35%;
-    top: 85%;
-    transition: all 0.5s ease;
-    background-color: var(--darkCOLOR);
-}
-
-.work-section h3:hover::after {
-    width: 30%;
-}
 
 .work-section .box {
     border: 2px solid var(--darkCOLOR);
