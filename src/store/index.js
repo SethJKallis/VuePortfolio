@@ -3,24 +3,34 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     projects: null,
-    testimonials: null
+    testimonials: null,
+    education: null
   },
+
   getters: {
     testimonials(state){
       return state.testimonials
     },
     projects(state){
       return state.projects
+    },
+    education(state){
+      return state.education
     }
   },
+
   mutations: {
     setTestimonials(state, testimonials){
       state.testimonials = testimonials
     },
     setProjects(state, projects){
       state.projects = projects
+    },
+    setEducation(state, education){
+      state.education = education
     }
   },
+
   actions: {
     fetchTestimonials(content){
       return fetch('https://sethjkallis.github.io/Vue-Portfolio-Data/testimonials.json')
@@ -41,8 +51,16 @@ export default createStore({
       .catch((err) => {
         console.warn(err)
       })
+    },
+    fetchEducation(content){
+      return fetch('https://sethjkallis.github.io/Vue-Portfolio-Data/education.json')
+      .then((response) => response.json())
+      .then((data) => {
+        content.commit("setEducation", data.education)
+      })
     }
   },
+
   modules: {
   }
 })

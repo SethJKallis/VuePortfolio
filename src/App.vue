@@ -20,7 +20,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: lightgrey;
-  color: #2c3e50;
+  background-image: radial-gradient( #9fd3c7, #385170);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #000;
 }
 </style>

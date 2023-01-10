@@ -2,8 +2,9 @@
 :root{
     --darkCOLOR: #000;
     --lightCOLOR: whitesmoke;
-    --backgroudCOLOR: papayawhip;
-    --highlightCOLOR: yellow;
+    --backgroundCOLOR: #9fd3c7;
+    --highlightCOLOR: #9fd3c7;
+    --linearSTART: #ececec
 }
 /* RESETS */
 *,
@@ -50,6 +51,7 @@ a:hover,
 a:focus{
     font-weight: bold;
 }
+
 /*END RESETS*/
 
 /* UTILITY */
@@ -61,7 +63,6 @@ a:focus{
     justify-content: center;
     align-items: center;
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.438);
-
 }
 
 .highlight{
@@ -111,8 +112,8 @@ a:focus{
 .navbar .routerLink:hover,
 .navbar .routerLink:focus,
 .navbar .routerLink:active{
-    color: yellow;
-    letter-spacing: 0.15em;
+    color: var(--highlightCOLOR);
+    letter-spacing: 0.125em;
 }
 
 .navbar-brand .siteLogo {
@@ -246,7 +247,7 @@ a:focus{
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     padding: 0.5em;
-    background-image: linear-gradient(rgba(255, 239, 213, 0),papayawhip);
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     background-size: cover;
     color: var(--darkCOLOR);
     transition: all 0.5s ease;
@@ -281,7 +282,7 @@ a:focus{
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     padding: 0.5em;
-    background-image: linear-gradient(rgba(255, 239, 213, 0),papayawhip);
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     background-size: cover;
     color: var(--darkCOLOR);
     transition: all 0.5s ease;
@@ -300,7 +301,7 @@ a:focus{
 #projects .html-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
-    background-image: linear-gradient(rgba(255, 166, 0, 0),yellow);
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     background-size: contain;
     transition: all 0.5s ease;
 }
@@ -315,7 +316,7 @@ a:focus{
 #projects .css-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
-    background-image: linear-gradient(rgba(0, 0, 255, 0), lightblue);
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     background-size: cover;
     transition: all 0.5s ease;
 }
@@ -329,7 +330,7 @@ a:focus{
 #projects .bootstrap-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
-    background-image: linear-gradient(rgba(0, 0, 128, 0), rgba(2, 0, 128, 0.616), rgba(0, 0, 255, 0.675));
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     background-size: cover;
     transition: all 0.5s ease;
 }
@@ -453,28 +454,28 @@ a:focus{
 /* ABOUT SECTION */
 
 #about .html-skill{
-    background-image: linear-gradient(rgba(255, 166, 0, 0), rgb(255, 111, 0));
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     border: 2px solid var(--darkCOLOR);
     border-radius: 1em;
     transition: all 0.5s ease;
 }
 
 #about .css-skill {
-    background-image: linear-gradient(rgba(173, 216, 230, 0), rgb(0, 140, 255));
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     border: 2px solid var(--darkCOLOR);
     border-radius: 1em;
     transition: all 0.5s ease;
 }
 
 #about .bootstrap-skill {
-    background-image: linear-gradient(rgba(0, 0, 128, 0), navy);
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     border: 2px solid var(--darkCOLOR);
     border-radius: 1em;
     transition: all 0.5s ease;
 }
 
 #about .javascript-skill {
-    background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255, 55, 0));
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     border: 2px solid var(--darkCOLOR);
     border-radius: 1em;
     transition: all 0.5s ease;
@@ -494,7 +495,7 @@ a:focus{
 #about .aspirations {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1em;
-    background-image: linear-gradient(rgba(255, 239, 213, 0), papayawhip);
+    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     transition: all 0.5s ease;
 }
 
@@ -508,7 +509,7 @@ a:focus{
 /* FOOTER */
 footer{
     background-color: var(--darkCOLOR);
-    color: yellow;
+    color: var(--highlightCOLOR);
     display: flex;
     position: fixed;
     bottom: 0;

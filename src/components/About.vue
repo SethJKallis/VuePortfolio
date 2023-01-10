@@ -21,7 +21,7 @@
             <p class="lead nowrap">(In progress)</p>
             <div class="progress">
               <div
-                class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
                 role="progressbar"
                 aria-valuenow="75"
                 aria-valuemin="0"
@@ -36,7 +36,7 @@
             <p class="lead nowrap">(In progress)</p>
             <div class="progress">
               <div
-                class="progress-bar progress-bar-striped bg-info progress-bar-animated"
+                class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
                 role="progressbar"
                 aria-valuenow="75"
                 aria-valuemin="0"
@@ -52,7 +52,7 @@
             <p class="lead nowrap">(In progress)</p>
             <div class="progress">
               <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
+                class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
                 role="progressbar"
                 aria-valuenow="75"
                 aria-valuemin="0"
@@ -67,7 +67,7 @@
             <p class="lead nowrap">(In progress)</p>
             <div class="progress">
               <div
-                class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+                class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
                 role="progressbar"
                 aria-valuenow="75"
                 aria-valuemin="0"

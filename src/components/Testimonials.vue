@@ -62,7 +62,6 @@ export default {
   },
   methods: {
     ...mapActions(["fetchTestimonials"]),
-
   },
   created(){
     this.fetchTestimonials();
