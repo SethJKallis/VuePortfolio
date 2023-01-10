@@ -4,7 +4,8 @@ export default createStore({
   state: {
     projects: null,
     testimonials: null,
-    education: null
+    education: null,
+    work: null
   },
 
   getters: {
@@ -16,6 +17,9 @@ export default createStore({
     },
     education(state){
       return state.education
+    },
+    work(state){
+      return state.work
     }
   },
 
@@ -28,6 +32,9 @@ export default createStore({
     },
     setEducation(state, education){
       state.education = education
+    },
+    setWork(state, work){
+      state.work = work
     }
   },
 
@@ -57,6 +64,13 @@ export default createStore({
       .then((response) => response.json())
       .then((data) => {
         content.commit("setEducation", data.education)
+      })
+    },
+    fetchWork(context){
+      return fetch('https://sethjkallis.github.io/Vue-Portfolio-Data/work.json')
+      .then((response) => response.json())
+      .then((data) => {
+        context.commit("setWork", data.work)
       })
     }
   },
