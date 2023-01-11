@@ -1,5 +1,6 @@
 <template>
   <NavBarComponent/>
+
   <router-view/>
   <footerComponent/>
 </template>
@@ -7,6 +8,7 @@
 <script>
 import NavBarComponent from '@/components/NavBar.vue'
 import footerComponent from '@/components/Footer.vue'
+
 export default {
   components: {
     NavBarComponent,

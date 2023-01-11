@@ -87,7 +87,7 @@
           <div class="socials">
             <a
               class="btn"
-              href="/assets/images/Get_rickrolled.webp"
+              href="https://www.facebook.com/"
               target="_blank"
             >
               <svg
@@ -106,7 +106,7 @@
 
             <a
               class="btn"
-              href="/assets/images/Get_rickrolled.webp"
+              href="https://www.instagram.com/instagram/?hl=en"
               target="_blank"
             >
               <svg
@@ -125,7 +125,7 @@
 
             <a
               class="btn"
-              href="/assets/images/Get_rickrolled.webp"
+              href="https://twitter.com/?lang=en-gb"
               target="_blank"
             >
               <svg

@@ -1,5 +1,8 @@
 <template>
-  <div class="content-container">
+  <div v-if="loadingItems" class="spinnerContainer loader-container">
+    <LoadingScreen loadingItems/>
+</div>
+  <div v-else class="content-container">
     <article id="testimonials" class="section-height">
       <h2 class="display-4 fw-bold">Testimonials</h2>
       <div
@@ -54,15 +57,30 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
+import LoadingScreen from './LoadingScreen.vue';
 
 export default {
   name: "testimonialsComponent",
+  components: {
+    LoadingScreen
+  },
   computed: {
     ...mapGetters(["testimonials"])
   },
   methods: {
     ...mapActions(["fetchTestimonials"]),
   },
+  data: function(){
+    return {
+      loadingItems:true
+    }
+  },
+  mounted(){
+    setTimeout(() => {
+      this.loadingItems = !this.loadingItems
+    }, 1000)
+  },
+    
   created(){
     this.fetchTestimonials();
   }

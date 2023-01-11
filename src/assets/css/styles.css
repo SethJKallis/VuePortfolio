@@ -55,6 +55,21 @@ a:focus{
 /*END RESETS*/
 
 /* UTILITY */
+.loader-container{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.438);
+}
+
+@media screen and (min-width:992px) {
+    .loader-container{
+        padding-left: 15%;
+    }
+}
+
 .section-height{
     min-height: 100vh;
     height: 100%;
@@ -104,6 +119,7 @@ a:focus{
 
 .navbar .routerLink {
     font-weight: bold;
+    font-size: 0.9em;
     text-transform: uppercase;
     color: whitesmoke;
     transition: all 0.5s ease;
@@ -223,9 +239,10 @@ a:focus{
     width: 100%;
 }
 
-/* EDUCATION */
+/* RESUME */
 
-.education-section .box{
+.education-section .box,
+.work-section .box{
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     padding: 0.5em;
@@ -233,27 +250,15 @@ a:focus{
     background-size: cover;
     color: var(--darkCOLOR);
     transition: all 0.5s ease;
+
 }
 
-.education-section .box:hover{
-    transform: scale(0.95);
-}
-
-/* WORK */
-
-.work-section .box {
-    border: 2px solid var(--darkCOLOR);
-    border-radius: 1rem;
-    padding: 0.5em;
-    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
-    background-size: cover;
-    color: var(--darkCOLOR);
-    transition: all 0.5s ease;
-}
-
+.education-section .box:hover,
 .work-section .box:hover{
     transform: scale(0.95);
 }
+
+/* END RESUME */
 
 
 
@@ -261,7 +266,9 @@ a:focus{
 #projects{
     margin-bottom: 30px;
 }
-#projects .html-project {
+#projects .html-project,
+#projects .css-project,
+#projects .bootstrap-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
@@ -271,32 +278,17 @@ a:focus{
 
 #projects .html-project figure img{
     border-radius: 1rem;
-    min-width: 17rem;
+    min-width: 15rem;
     max-width: 45%;
     height: auto;
 }
 
-#projects .css-project {
-    border: 2px solid var(--darkCOLOR);
-    border-radius: 1rem;
-    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
-    background-size: cover;
-    transition: all 0.5s ease;
-}
-
 #projects .css-project figure img {
     border-radius: 1rem;
-    min-width: 17rem;
+    min-width: 15rem;
     max-width: 50%;
 }
 
-#projects .bootstrap-project {
-    border: 2px solid var(--darkCOLOR);
-    border-radius: 1rem;
-    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
-    background-size: cover;
-    transition: all 0.5s ease;
-}
 #projects .bootstrap-project figure img{
     border-radius: 1rem;
     min-width: 17rem;

@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg">
             <h1 class="display-2 fw-bold">
-              Good Day,I'm <span class="highlight">Seth Kallis</span>
+              Hello World, I'm <span class="highlight">Seth Kallis</span>
             </h1>
             <p class="lead display-6">
               I am an aspiring developer and this is my Portfolio.

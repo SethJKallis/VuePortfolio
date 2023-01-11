@@ -49,11 +49,11 @@ export default createStore({
         console.warn(err)
       })
     },
-    fetchProjects(context){
+    fetchProjects(content){
       return fetch('https://sethjkallis.github.io/Vue-Portfolio-Data/projects.json')
       .then((response) => response.json())
       .then((data) => {
-        context.commit("setProjects", data.projects)
+        content.commit("setProjects", data.projects)
       })
       .catch((err) => {
         console.warn(err)

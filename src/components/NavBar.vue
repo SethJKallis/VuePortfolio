@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top p-1">  
             <div class="container-fluid d-lg-flex flex-lg-column g-0">
-              <a class="navbar-brand p-0 mx-lg-auto mb-lg-4 " href="#">
+              <a class="navbar-brand p-0 mx-lg-auto mb-lg-4" href="/">
                 <span class="h4 fw-bold d-block d-lg-none my-auto">
                   <figure class="m-0">
                   <img class="siteLogo rounded-circle img-fluid" src="https://i.postimg.cc/7PWJjb4C/real-estate-logo-600w-1615688014.webp" alt="SiteLogo" style="width: 2.5rem;">
