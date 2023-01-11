@@ -55,29 +55,18 @@ a:focus{
 /*END RESETS*/
 
 /* UTILITY */
-.loader-container{
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2.5px solid rgba(0, 0, 0, 0.438);
-}
-
-@media screen and (min-width:992px) {
-    .loader-container{
-        padding-left: 15%;
-    }
-}
-
+.loader-container,
 .section-height{
     min-height: 100vh;
     height: 100%;
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.438);
+}
+
+.section-height{
+    flex-flow: column nowrap;
 }
 
 .highlight{
@@ -143,34 +132,6 @@ a:focus{
     }
     to{
         transform: rotate(360deg);
-    }
-}
-
-
-@media screen and (min-width:992px){
-    .content-container{
-        padding-left: 15%;
-    }
-
-    .navbar{
-        min-height: 100vh;
-        width: 15%;
-        background-image: var(--darkCOLOR);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .navbar-brand .profilePicture{
-        animation: logoRotate 4s ease 5s infinite alternate;
-    }
-    
-    @keyframes logoRotate {
-        from{
-            transform: rotateY(0deg); 
-        }
-        to {
-            transform: rotateY(180deg);
-        }
     }
 }
 
@@ -474,11 +435,40 @@ footer{
 }
 
 @media screen and (min-width:992px) {
+    #projects{
+        margin-bottom: 0;
+        padding-top: 5px;
+    }
     footer{
         left: 0;
         bottom: 0;
         width: 15%;
         z-index: 10000;
+    }
+    .content-container,
+    .loader-container{
+        padding-left: 15%;
+    }
+
+    .navbar{
+        min-height: 100vh;
+        width: 15%;
+        background-image: var(--darkCOLOR);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .navbar-brand .profilePicture{
+        animation: logoRotate 4s ease 5s infinite alternate;
+    }
+    
+    @keyframes logoRotate {
+        from{
+            transform: rotateY(0deg); 
+        }
+        to {
+            transform: rotateY(180deg);
+        }
     }
 }
 /* END FOOTER */
