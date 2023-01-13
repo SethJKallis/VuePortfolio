@@ -4,8 +4,8 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg">
-            <h1 class="display-2 fw-bold">
-              Hello World, I'm <span class="highlight">Seth Kallis</span>
+            <h1 class="display-2 fw-bold" :fullName="fullName">
+              Hello {{ fullName }}, I'm <span class="highlight">Seth Kallis</span>
             </h1>
             <p class="lead display-6">
               I am an aspiring developer and this is my Portfolio.
@@ -32,5 +32,12 @@
 <script>
 export default {
   name: "homeComponent",
-};
+  data: function(){
+    let fullName = JSON.parse(localStorage.getItem('fullName'))
+    return {
+      fullName
+    }
+    
+  }
+}
 </script>

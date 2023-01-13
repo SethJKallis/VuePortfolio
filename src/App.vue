@@ -1,6 +1,5 @@
 <template>
   <NavBarComponent/>
-
   <router-view/>
   <footerComponent/>
 </template>
@@ -13,8 +12,9 @@ export default {
   components: {
     NavBarComponent,
     footerComponent
+  },
   }
-}
+
 </script>
 <style>
 #app {

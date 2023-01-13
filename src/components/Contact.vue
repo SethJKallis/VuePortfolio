@@ -5,11 +5,12 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <form action="https://formspree.io/f/xdojpnov" method="post">
+            <form action="https://formspree.io/f/xdojpnov" method="post" target="_blank">
               <fieldset>
                 <legend class="display-5 fw-bold"></legend>
                 <div class="row">
                   <h3 class="display-6 fw-bold">Your Details:</h3>
+                 
                   <div class="col-10 col-md-5 mb-1 mx-auto me-md-0 g-md-2">
                     <input
                       class="form-control text-center"
@@ -20,7 +21,6 @@
                       required
                     />
                   </div>
-
                   <div class="col-10 col-md-5 mb-1 mx-auto ms-md-0 g-md-2">
                     <input
                       class="form-control text-center"
@@ -75,14 +75,13 @@
                 </div>
               </fieldset>
               <div class="btn-group mt-1 mb-4 mb-lg-0">
-                <button class="btn btn-success" type="submit">Submit</button>
+                <button class="btn btn-success" type="submit" v-on:click="saveInputs()">Submit</button>
                 <button class="btn btn-danger" type="reset">Reset</button>
               </div>
             </form>
           </div>
         </div>
         
-
         <div class="socialsContainer">
           <div class="socials">
             <a
@@ -149,7 +148,17 @@
 </template>
 
 <script>
+let fullName = 'World'
+localStorage.setItem('fullName', JSON.stringify(fullName))
 export default {
-    name: "contactComponent"
+    name: "contactComponent",
+  methods: {
+  saveInputs(){
+    let firstNameInput = document.querySelector('#firstName').value;
+    let lastNameInput = document.querySelector('#lastName').value;
+    let fullName= firstNameInput + ' ' + lastNameInput
+    localStorage.setItem('fullName', JSON.stringify(fullName))
+  }
+}
 }
 </script>
