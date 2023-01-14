@@ -5,6 +5,9 @@
 </template>
 
 <script>
+let fullName = 'World'
+localStorage.setItem('fullName', JSON.stringify(fullName))
+
 import NavBarComponent from '@/components/NavBar.vue'
 import footerComponent from '@/components/Footer.vue'
 

@@ -148,8 +148,6 @@
 </template>
 
 <script>
-let fullName = 'World'
-localStorage.setItem('fullName', JSON.stringify(fullName))
 export default {
     name: "contactComponent",
   methods: {
