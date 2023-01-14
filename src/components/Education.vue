@@ -25,7 +25,7 @@ export default {
     methods: {
       ...mapActions(["fetchEducation"])
     },
-    created(){
+    async created(){
       this.fetchEducation();
     }
 }

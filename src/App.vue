@@ -5,8 +5,6 @@
 </template>
 
 <script>
-let fullName = 'World'
-localStorage.setItem('fullName', JSON.stringify(fullName))
 
 import NavBarComponent from '@/components/NavBar.vue'
 import footerComponent from '@/components/Footer.vue'
@@ -16,6 +14,12 @@ export default {
     NavBarComponent,
     footerComponent
   },
+  data: function(){
+    let fullName = 'World'
+localStorage.setItem('fullName', JSON.stringify(fullName))
+
+    return {fullName}
+  }
   }
 
 </script>
