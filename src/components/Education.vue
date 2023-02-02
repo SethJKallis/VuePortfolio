@@ -1,5 +1,5 @@
 <template>
-    <div class="content-container">
+    <div class="content-container mt-3 mt-md-0">
         <div class="section-height education-section col-11 col-sm-11 col-md mx-auto">
                   <h3 class="display-6 fw-bold text-center">Education</h3>
                   <dl class="row">

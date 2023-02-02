@@ -5,11 +5,11 @@
 
     <div v-else class="section-height">
         <article id="projects" class="content-container mt-5 mt-lg-0">
-              <h2 class="display-4 fw-bold d-lg-none">Projects</h2>
+              <h2 class="display-4 fw-bold">Projects</h2>
               <div class="container-fluid px-3 pb-1">
                 <div class="row text-center gap-1">
                   <div v-for="project in projects" :key="project" :class="project.class" class="col col-sm-12 col-lg d-flex flex-column justify-content-between">
-                        <div class="nowrap lead fw-bold display-6 mt-3 g-0 px-0">{{ project.projectName }}</div>
+                        <div class="nowrap lead fw-bold display-6 g-0 px-0">{{ project.projectName }}</div>
                         <figure>
                           <img class="img-thumbnail mx-auto" :src="project.imageUrl" :alt="project.imageAlt" loading="lazy">
                         </figure>
