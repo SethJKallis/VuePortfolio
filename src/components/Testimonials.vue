@@ -25,7 +25,7 @@
                     <img v-bind:src="testimonial.imageUrl" :alt="testimonial.imageAlt" />
                   </div>
                   <div class="flip-card-back">
-                    <p>{{ testimonial.comment }}</p>
+                    <p class="lead fs-4">{{ testimonial.comment }}</p>
                   </div>
                 </figure>
               </div>

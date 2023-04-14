@@ -4,6 +4,7 @@
 </div>
     <div v-else>
         <educationComponent/>
+        
         <workComponent/>
     </div>
 </template>

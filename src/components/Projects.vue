@@ -7,9 +7,9 @@
         <article id="projects" class="content-container mt-5 mt-lg-0">
               <h2 class="display-4 fw-bold">Projects</h2>
               <div class="container-fluid px-3 pb-1">
-                <div class="row text-center gap-1">
-                  <div v-for="project in projects" :key="project" :class="project.class" class="col col-sm-12 col-lg d-flex flex-column justify-content-between">
-                        <div class="nowrap lead fw-bold display-6 g-0 px-0">{{ project.projectName }}</div>
+                <div class="row text-center gap-1 d-flex justify-content-center align">
+                  <div v-for="project in projects" :key="project" :class="project.class" class="col col-sm-12 col-lg d-flex flex-column justify-content-between" data-aos="fade-in">
+                        <h3 class="fw-bold g-0 px-0 fs-3 mt-2">{{ project.projectName }}</h3>
                         <figure>
                           <img class="img-thumbnail mx-auto" :src="project.imageUrl" :alt="project.imageAlt" loading="lazy">
                         </figure>
@@ -31,7 +31,8 @@
 <script>
 import { mapActions, mapGetters } from 'vuex';
 import LoadingScreen from '@/components/LoadingScreen.vue';
-
+import AOS from 'aos';
+AOS.init();
 export default {
     name: "projectsComponent",
     components: {

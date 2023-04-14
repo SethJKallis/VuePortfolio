@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 /* VARIABLES */
 :root{
     --darkCOLOR: #000;
     --lightCOLOR: whitesmoke;
     --backgroundCOLOR: #9fd3c7;
     --highlightCOLOR: #9fd3c7;
-    --linearSTART: #ececec
+    --linearSTART: #ececec;
+    --headingCOLOR: #061b30;
+    --textCOLOR:  #030f1c;
 }
 /* RESETS */
 *,
@@ -36,14 +40,22 @@ img{
     width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6{
-    color: var(--darkCOLOR);
-    font-weight: 900;
+h1,h2,h3,h4,h5,h6, dt{
+    font-family: 'Khand', sans-serif;
+    color: var(--headingCOLOR);
+    font-weight: bolder;
+}
+p,
+dd,
+address,
+li{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: var(--textCOLOR);
 }
 
 a:any-link{
     text-decoration: none;
-    color: var(--darkCOLOR);
+    color: var(--textCOLOR);
     transition: all 0.5s ease;
 }
 
@@ -75,6 +87,7 @@ a:focus{
 }
 
 .nowrap{
+    color: var(--darkCOLOR);
     white-space: nowrap;
 }
 /* END UTILITY */
@@ -181,23 +194,29 @@ a:focus{
 
 /* CUSTOM LINK */
 .link-custom{
+    display: block;
     font-weight: bold;
     position: relative;
+    width: 100%;
+    color: var(--textCOLOR);
 }
 
 .link-custom::after{
+    margin: 0;
+    padding: 0;
     content: "";
     position: absolute;
     width: 0%;
     height: 2px;
-    left: 0;
+    left: 1;
+    right: 37.5%;
     top: 110%;
     transition: all 0.5s ease;
     background-color: var(--darkCOLOR);
 }
 
 .link-custom:hover::after{
-    width: 100%;
+    width: 25%;
 }
 
 /* RESUME */
@@ -209,13 +228,12 @@ a:focus{
     padding: 0.5em;
     background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     background-size: cover;
-    color: var(--darkCOLOR);
     transition: all 0.5s ease;
 
 }
 
-.education-section .box:hover,
-.work-section .box:hover{
+.education-section dl .box:hover,
+#work .work-section .box:hover{
     transform: scale(0.95);
 }
 
@@ -236,6 +254,7 @@ a:focus{
     background-size: contain;
     transition: all 0.5s ease;
 }
+
 
 #projects .html-project figure img{
     border-radius: 1rem;
@@ -283,7 +302,6 @@ a:focus{
 #projects .css-project .btn-group a:focus{
     background-color: var(--darkCOLOR);
     color: var(--highlightCOLOR);
-    transform: scale(1.1);
 }
 
 /* END PROJECT SECTION */
@@ -329,6 +347,7 @@ a:focus{
     object-position: center;
     width: 100%;
     height: 100%;
+    
 }
 
   .flip-card-inner {
@@ -364,33 +383,18 @@ a:focus{
     color: var(--highlightCOLOR);
     transform: rotateY(180deg);
   }
+  .flip-card-back p{
+    color: var(--highlightCOLOR);
+  }
 
 /* END TESTIMONIAL SECTION */
 
 /* ABOUT SECTION */
 
-#about .html-skill{
-    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
-    border: 2px solid var(--darkCOLOR);
-    border-radius: 1em;
-    transition: all 0.5s ease;
-}
-
-#about .css-skill {
-    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
-    border: 2px solid var(--darkCOLOR);
-    border-radius: 1em;
-    transition: all 0.5s ease;
-}
-
-#about .bootstrap-skill {
-    background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
-    border: 2px solid var(--darkCOLOR);
-    border-radius: 1em;
-    transition: all 0.5s ease;
-}
-
-#about .javascript-skill {
+#about .html-skill,
+#about .css-skill,
+#about .bootstrap-skill,
+#about .javascript-skill{
     background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
     border: 2px solid var(--darkCOLOR);
     border-radius: 1em;
@@ -408,7 +412,9 @@ a:focus{
     transform: scale(0.95);
 }
 
-#about .aspirations {
+#about .aspirations,
+#about address,
+#about .DOB {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1em;
     background-image: linear-gradient(var(--linearSTART), var(--highlightCOLOR));
@@ -416,7 +422,11 @@ a:focus{
 }
 
 #about .aspirations:hover,
-#about .aspirations:focus {
+#about .aspirations:focus,
+#about address:hover,
+#about address:focus,
+#about .DOB:hover,
+#about .DOB:focus {
     transform: scale(0.95);
 }
 /* END ABOUT SECTION */
@@ -441,6 +451,11 @@ footer{
         margin-bottom: 0;
         padding-top: 5px;
     }
+    #projects .html-project,
+#projects .css-project,
+#projects .bootstrap-project {
+    max-width: 350px;
+}
     footer{
         left: 0;
         bottom: 0;

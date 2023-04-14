@@ -1,6 +1,6 @@
 <template>
   <div class="content-container">
-    <article id="contact" class="section-height mt-5 mt-lg-0">
+    <article id="contact" class="section-height mt-lg-0">
       <h2 class="display-4 fw-bold">Contact</h2>
       <div class="container">
         <div class="row">
@@ -19,6 +19,7 @@
                       type="text"
                       placeholder="First Name"
                       required
+                      data-aos="fade-right"
                     />
                   </div>
                   <div class="col-10 col-md-5 mb-1 mx-auto ms-md-0 g-md-2">
@@ -29,6 +30,7 @@
                       type="text"
                       placeholder="Last Name"
                       required
+                      data-aos="fade-left"
                     />
                   </div>
 
@@ -40,6 +42,7 @@
                       type="email"
                       placeholder="Email Address"
                       required
+                      data-aos="fade-right"
                     />
                   </div>
 
@@ -53,24 +56,8 @@
                       cols="15"
                       rows="5"
                       placeholder="Let me know what you think!"
+                      data-aos="fade-up"
                     ></textarea>
-                  </div>
-                  <div
-                    class="col-12 mt-3 mb-3 d-flex flex-column justify-content-center align-content-center"
-                  >
-                    <label for="contact-reason" class="display-6 fw-bold mb-2"
-                      >Reason For Contact?</label
-                    >
-                    <select
-                      name="reason-for-contact"
-                      id="contact-reason"
-                      class="text-center form-control w-50 mx-auto"
-                    >
-                      <option value="hiring">Interested in Hiring.</option>
-                      <option value="collab">Collaboration</option>
-                      <option value="assistance">Assist with Projects</option>
-                      <option value="gaming">Online Co-op Gaming</option>
-                    </select>
                   </div>
                 </div>
               </fieldset>
@@ -148,6 +135,8 @@
 </template>
 
 <script>
+import AOS from 'aos';
+AOS.init();
 export default {
     name: "contactComponent",
   methods: {
