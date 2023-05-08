@@ -476,7 +476,7 @@ footer{
     }
     
     .navbar-brand .profilePicture{
-        animation: logoRotate 4s ease 5s infinite alternate;
+        animation: logoRotate 4s ease 5s 1 forwards;
     }
     
     @keyframes logoRotate {
