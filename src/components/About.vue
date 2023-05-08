@@ -58,9 +58,8 @@
           <li class="lead m-0 fs-4">Certificate Of Excellence Issued by Life Choices Coding Academy.</li>
         </ul>
       </div>
-      <div class="container-fluid px-3 mb-2" data-aos="fade-up">
-        </div>
-        <div class="row gap-1 mb-1 d-flex justify-content-center align-content-center" >
+
+        <div class="row gap-1 mb-1 px-5 d-flex justify-content-center align-content-center" >
           <h3 class="display-6 text-center fw-bold">Skills</h3>
           <div class="html-skill col-sm-5 col-md p-4" data-aos="fade-down-right" data-aos-offset="200">
             <h3 class="display-6 fw-bold">HTML</h3>
@@ -70,7 +69,7 @@
             <h3 class="display-6 fw-bold">CSS</h3>
           </div>
         </div>
-        <div class="row gap-1 mb-1 d-flex justify-content-center align-content-center" >
+        <div class="row gap-1 mb-1 px-5 d-flex justify-content-center align-content-center" >
           <div class="bootstrap-skill col-sm-5 col-md p-4" data-aos="fade-right" data-aos-offset="100">
             <h3 class="display-6 fw-bold">Bootstrap</h3>
           </div>
@@ -79,7 +78,7 @@
             <h3 class="display-6 fw-bold">JavaScript</h3>
           </div>
         </div>
-        <div class="row gap-1 mb-1 d-flex justify-content-center align-content-center">
+        <div class="row gap-1 mb-1 px-5 d-flex justify-content-center align-content-center">
           <div class="bootstrap-skill col-sm-5 col-md p-4" data-aos="fade-up-right" data-aos-offset="0">
             <h3 class="display-6 fw-bold">Vue JS</h3>
           </div>
@@ -88,7 +87,7 @@
             <h3 class="display-6 fw-bold">Node JS</h3>
           </div>
         </div>
-        <div class="row gap-1 mb-1 d-flex justify-content-center align-content-center">
+        <div class="row gap-1 mb-1 px-5 d-flex justify-content-center align-content-center">
           <div class="bootstrap-skill col-sm-5 col-md p-4" data-aos="fade-up" data-aos-offset="50">
             <h3 class="display-6 fw-bold">MySQL</h3>
           </div>
@@ -97,7 +96,7 @@
           </div>
 
         </div>
-        <div class="row gap-1 mb-1 d-flex justify-content-center align-content-center">
+        <div class="row gap-1 mb-1 px-5 d-flex justify-content-center align-content-center">
           <div class="bootstrap-skill col-sm-5 col-md p-4" data-aos="fade-up" data-aos-offset="50">
             <h3 class="display-6 fw-bold">MS EXCEL</h3>
           </div>
