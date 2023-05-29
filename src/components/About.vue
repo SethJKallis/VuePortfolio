@@ -110,7 +110,7 @@
       <div class="DOB mb-4 d-flex justify-content-center align-content-center flex-column w-50 py-1 mt-5" data-aos="fade-left" data-aos-offset="0">
         <h3 class="fw-bold text-center mx-2">Contact Information:</h3>
         <a href="mailto:" class="link-custom mb-3 d-flex flex-column fs-5"
-                >Email Address: <span class="nowrap">kallisseth@gmailcom</span></a
+                >Email Address: <span class="nowrap">kallisseth@gmail.com</span></a
               >
         <a href="tel:" class="link-custom mb-2 d-flex flex-column fs-5"
                 >Phone Number: <span class="nowrap">064 933 8144</span></a
